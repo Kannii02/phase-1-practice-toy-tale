@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
   toyForm.addEventListener("submit", (event) => {
     event.preventDefault(); 
 
-    console.log("🚀 Form submitted!"); 
+    console.log("Form submitted!"); 
 
     const toyName = event.target.name.value.trim(); 
     const toyImage = event.target.image.value.trim();
@@ -72,7 +72,7 @@ function renderToyCard(toy) {
 }
 
 function createToy(toy) {
-  console.log("📤 Sending POST request...", toy);
+  console.log("Sending POST request...", toy);
 
   fetch("http://localhost:3000/toys", {
     method: "POST",
